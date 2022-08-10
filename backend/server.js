@@ -1,5 +1,5 @@
 require("dotenv").config()
-const { PORT = 3001, DATABASE_URL } = process.env
+const { PORT = 3000, DATABASE_URL } = process.env
 const express = require("express")
 const app = express()
 const mongoose = require("mongoose")
@@ -16,7 +16,7 @@ mongoose.connection
     .on("close", () => console.log("You are disconnected from MongoDB"))
     .on("error", (error) => console.log(error))
 
-// cars models
+// carsForSell model
 
 const CarsSchema = new mongoose.Schema({
     make: String,
@@ -31,7 +31,7 @@ const Cars = mongoose.model("Cars", CarsSchema)
 //middleware
 app.use(cors())
 app.use(morgan("dev"))
-app.use(express.json)
+app.use(express.json())
 
 //routes
     

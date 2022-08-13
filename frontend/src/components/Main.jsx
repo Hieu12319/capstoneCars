@@ -25,13 +25,32 @@ export default function Main(props) {
         getCars()
     }
 
+    const updateCars = async (car, id) => {
+        await fetch(URL + id, {
+            method: "PUT",
+            headers: {
+                "Content-Type": "Application/json",
+            },
+            body: JSON.stringigy(car),
+        })
+        getCars()
+    }
+
+    const deleteCars = async (id) => {
+        await fetch(URL +id, {
+            method: "DELETE",
+        })
+        getCars()
+    }
+
+
     useEffect(() => getCars(),[])
 
     return(
         <main>
             <Routes>
                 <Route exact path="/" element={<Index cars={cars} createCars={createCars} />} />
-                <Route path="/cars/:id" element={<Show cars={cars}/>} />
+                <Route path="/cars/:id" element={<Show cars={cars} updateCars={updateCars} deleteCars={deleteCars}/>} />
             </Routes>
         </main>
     )

@@ -6,7 +6,7 @@ import { useEffect, useState } from "react"
 
 export default function Main(props) {
     const [cars, setCars] = useState(null)
-    const URL = "http://localhost:3000/cars/"
+    const URL = "http://localhost:3000/cars"
 
     const getCars = async () => {
         const response = await fetch(URL)
@@ -44,7 +44,11 @@ export default function Main(props) {
     }
 
 
-    useEffect(() => getCars(),[])
+    useEffect(() => {
+        
+    getCars()
+
+},[])
 
     return(
         <main>

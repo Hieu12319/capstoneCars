@@ -34,15 +34,15 @@ export default function Show(props) {
             <h2>{car.model}</h2>
             <h3>{car.year}</h3>
             <h4>{car.description}</h4>
-            <img src={car.image} alt={car.name} />
+            <img src={car.image} alt={car.make} />
             <button id="delete" onClick={removeCar}>Delete Post</button>
             <form onSubmit={handleSubmit}>
-                <input type="text" value={editForm.make} name="make" placeholder="make" onchange={handleChange} />
-                <input type="text" value={editForm.model} name="model" placeholder="model" onchange={handleChange} />
-                <input type="number" value={editForm.year} name="year" placeholder="year" onchange={handleChange} />
-                <input type="text" value={editForm.image} name="image" placeholder="image URL" onchange={handleChange} />
-                <input type="number" value={editForm.price} name="price" placeholder="price" onchange={handleChange} />
-                <input type="text" value={editForm.description} name="description" placeholder="description" onchange={handleChange} />
+                <input type="text" value={editForm.make} name="make" placeholder="make" onChange={handleChange} />
+                <input type="text" value={editForm.model} name="model" placeholder="model" onChange={handleChange} />
+                <input type="number" value={editForm.year} name="year" placeholder="year" onChange={handleChange} />
+                <input type="text" value={editForm.image} name="image" placeholder="image URL" onChange={handleChange} />
+                <input type="number" value={editForm.price} name="price" placeholder="price" onChange={handleChange} />
+                <input type="text" value={editForm.description} name="description" placeholder="description" onChange={handleChange} />
                 <input type="submit" value="Update Car Post" />
             </form>
         </div>

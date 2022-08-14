@@ -6,7 +6,7 @@ import { useEffect, useState } from "react"
 
 export default function Main(props) {
     const [cars, setCars] = useState(null)
-    const URL = "http://localhost:3000/cars"
+    const URL = "Hieu12319/capstonecarsbackend/"
 
     const getCars = async () => {
         const response = await fetch(URL)
@@ -31,23 +31,21 @@ export default function Main(props) {
             headers: {
                 "Content-Type": "Application/json",
             },
-            body: JSON.stringigy(car),
+            body: JSON.stringify(car),
         })
         getCars()
     }
 
     const deleteCars = async (id) => {
-        await fetch(URL +id, {
+        await fetch(URL + id, {
             method: "DELETE",
         })
         getCars()
     }
 
 
-    useEffect(() => {
-        
+    useEffect(() => {       
     getCars()
-
 },[])
 
     return(

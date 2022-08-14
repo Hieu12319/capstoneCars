@@ -1,6 +1,8 @@
 import { useParams, useNavigate } from 'react-router-dom'
 import { useState } from "react"
-
+import {
+  DeleteButton
+} from "../styles/styles"
 
 export default function Show(props) {
     const { id } = useParams();
@@ -11,21 +13,21 @@ export default function Show(props) {
     const [editForm, setEditForm] = useState(car)
 
     const handleChange = (event) => {
-        setEditForm((prevState) => ({
+        setEditForm(prevState => ({
           ...prevState,
           [event.target.name]: event.target.value,
-        }))
-      }
+        })
+      )}
 
     const handleSubmit = (event) => {
         event.preventDefault()
-        props.updateCars(editForm, car._id)
+        props.updateCars(editForm, id)
         navigate("/")
       }
 
       const removeCar = () => {
-        props.deleteCars(car._id)
-        props.history.push("/")
+        props.deleteCars(id)
+        navigate("/")
       }
 
     return (
@@ -33,9 +35,12 @@ export default function Show(props) {
             <h1>{car.make}</h1>
             <h2>{car.model}</h2>
             <h3>{car.year}</h3>
-            <h4>{car.description}</h4>
+            <h4>price = {car.price}</h4>
+            <h5>{car.description}</h5>
             <img src={car.image} alt={car.make} />
-            <button id="delete" onClick={removeCar}>Delete Post</button>
+            
+            <DeleteButton id="delete" onClick={removeCar}>Delete Post</DeleteButton>
+            
             <form onSubmit={handleSubmit}>
                 <input type="text" value={editForm.make} name="make" placeholder="make" onChange={handleChange} />
                 <input type="text" value={editForm.model} name="model" placeholder="model" onChange={handleChange} />

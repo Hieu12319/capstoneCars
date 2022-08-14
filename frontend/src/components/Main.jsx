@@ -6,7 +6,7 @@ import { useEffect, useState } from "react"
 
 export default function Main(props) {
     const [cars, setCars] = useState(null)
-    const URL = "Hieu12319/capstonecarsbackend/"
+    const URL = "https://capstonecarbackend.herokuapp.com/cars/"
 
     const getCars = async () => {
         const response = await fetch(URL)

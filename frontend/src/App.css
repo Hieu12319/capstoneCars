@@ -3,6 +3,7 @@
   min-height: 100vh;
   background-color: white;
   position: relative;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA0DkagbOk7Yyxq2vl1MDVpy6yW1Nmc5M29w&usqp=CAU)
 }
 
 .App-logo {
@@ -17,7 +18,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #1a1a1b;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -41,5 +42,5 @@
 }
 
 img {
-  max-width: 100px;
+  max-width: 250px
 }

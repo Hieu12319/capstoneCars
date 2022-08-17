@@ -13,6 +13,7 @@ export default function Index(props) {
         year: "",
         image: "",
         price: "",
+        contact: "",
         description: "",
     })
 
@@ -29,6 +30,7 @@ export default function Index(props) {
             year: "",
             image: "",
             price: "",
+            contact: "",
             description: "",
         })
     }
@@ -44,6 +46,7 @@ export default function Index(props) {
             <img src={car.image} alt={car.make} />
             <h3>{car.model}</h3>
             <h4>price = {car.price}</h4>
+            <h5>contact = {car.contact}</h5>
         </div>  
    ))}
    </ContainerStyle>
@@ -57,11 +60,12 @@ export default function Index(props) {
     <section>
         <FormStyle onSubmit={handleSubmit}>
             <input type="text" value={newForm.make} name="make" placeholder="make" onChange={handleChange} required /> <br/>
-            <input type="text" value={newForm.model} name="model" placeholder="model" onChange={handleChange} />
-            <input type="number" value={newForm.year} name="year" placeholder="year" onChange={handleChange} />
-            <input type="text" value={newForm.image} name="image" placeholder="image URL" onChange={handleChange} />
-            <input type="number" value={newForm.price} name="price" placeholder="price" onChange={handleChange} />
-            <input type="text" value={newForm.description} name="description" placeholder="description" onChange={handleChange} />
+            <input type="text" value={newForm.model} name="model" placeholder="model" onChange={handleChange} /> <br/>
+            <input type="number" value={newForm.year} name="year" placeholder="year" onChange={handleChange} />  <br/>
+            <input type="text" value={newForm.image} name="image" placeholder="image URL" onChange={handleChange} />  <br/>
+            <input type="number" value={newForm.price} name="price" placeholder="price" onChange={handleChange} />  <br/>
+            <input type="number" value={newForm.contact} name="contact" placeholder="contact" onChange={handleChange} /> <br/>
+            <input type="text" value={newForm.description} name="description" placeholder="description" onChange={handleChange} /> <br/>
             <input type="submit" value="Add Car For Sale" />
         </FormStyle>  
         {props.cars ? loaded() : loading()}

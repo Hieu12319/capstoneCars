@@ -4,8 +4,8 @@
 | Project Name | Car Selling App |
 | Description | A place for users to Sell their Cars! |
 | Developers | Hieu Nguyen |
-| Live site | [CarsForSellApp](https://moviecollectorsapp.herokuapp.com/) |
-| Repo | [GitHubLink](https://github.com/Hieu12319/moviecollectorproj) |
+| Live site | [CarsForSellApp](https://taupe-cucurucho-4fe979.netlify.app/) |
+| Repo | [GitHubLink](https://github.com/Hieu12319/capstoneCars) |
 |Trello | [TrelloSite](https://trello.com/b/0ah3SjXL/cars-for-sell-app)
 
 

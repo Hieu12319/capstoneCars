@@ -1,10 +1,10 @@
 **Summary**
 | Field | Detail |
 |-------|--------|
-| Project Name | Movie Collectors App |
-| Description | A place for people to share Movies! |
+| Project Name | Car Selling App |
+| Description | A place for users to Sell their Cars! |
 | Developers | Hieu Nguyen |
-| Live site | [MovieCollectorsApp](https://moviecollectorsapp.herokuapp.com/) |
+| Live site | [CarsForSellApp](https://moviecollectorsapp.herokuapp.com/) |
 | Repo | [GitHubLink](https://github.com/Hieu12319/moviecollectorproj) |
 |Trello | [TrelloSite](https://trello.com/b/0ah3SjXL/cars-for-sell-app)
 

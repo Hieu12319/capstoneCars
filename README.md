@@ -25,7 +25,6 @@
 - Users can create a car for sell.
 - Users can edit the car for sell.
 - Users can see a list of cars for sale.
-- Users can see all cars for sale.
 - Users can delete a car for sale.
 
 # Technology used

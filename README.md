@@ -50,7 +50,6 @@
 
  ### Snippets
 
-![](../../OneDrive/Desktop/formcarforsell.png)
-![](../../OneDrive/Desktop/showpagecarsforsell.png)
-![](../../OneDrive/Desktop/main%20page.png)
+![formcarforsell](https://user-images.githubusercontent.com/97079165/185275842-8849b331-477e-48f6-b86d-b8898a76dbc8.png)
+![main page](https://user-images.githubusercontent.com/97079165/185275868-48aabc1c-972c-47a1-8a6f-8210b629d965.png)
 
